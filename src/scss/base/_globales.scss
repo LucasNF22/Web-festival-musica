@@ -15,6 +15,10 @@ html{
 body {
     font-family: v.$fuentePrincipal;
     font-size: 1.6rem;
+
+    &.fijar-body {
+        overflow: hidden;
+    }
 }
 
 p {
@@ -48,5 +52,7 @@ h3 {
 
 img {
     max-width: 100%;
+    width: 100%;
+    height: auto;
     display: block;
 }

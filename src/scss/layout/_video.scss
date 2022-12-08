@@ -33,13 +33,22 @@
 .contenido-video {
     z-index: 3;
     @include m.tablet {
-        
         padding: 0 2rem ;
     }
     h2{
+        text-align: center;
+        font-family: v.$fuenteTitulo;
+        font-weight: normal;
+        
+        font-size: 4rem;
         color: v.$blanco;
-        font-size: 7rem;
         margin: 0;
+        
+        @include m.phone {
+            text-align: unset;
+            font-size: 6rem;
+            
+        }
     }
     p {
        background-color: v.$rosa; 

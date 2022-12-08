@@ -6,9 +6,17 @@
     padding: 2rem;
     h1 {
         
+        font-size: 3.8rem;
+        font-family: v.$fuenteTitulo;
+        font-weight: normal;
+        
         color: v.$blanco;
         text-align: center;
         
+        @include m.phone {
+                font-size: 4rem;          
+        }
+
         @include m.tablet {
         margin: 0;
         }
