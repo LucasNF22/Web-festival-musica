@@ -4,25 +4,40 @@
 .header {
     background-color: v.$verde;
     padding: 2rem;
+    
+    &.fijo{
+        @include m.tablet {
+            transition: all .3s linear;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            padding: 2rem 0;
+            box-shadow: 0rem .2rem .6rem v.$negro;
+            
+            
+        }
+    }
     h1 {
         
-        font-size: 3.8rem;
         font-family: v.$fuenteTitulo;
         font-weight: normal;
-        
+        margin-bottom: 3rem;
         color: v.$blanco;
         text-align: center;
         
         @include m.phone {
-                font-size: 4rem;          
+            font-size: 4rem;          
         }
-
+        
         @include m.tablet {
-        margin: 0;
+            margin: 0;
+            font-size: 3.4rem;
         }
 
     }
     .contenido-header {
+            
+
         @include m.tablet {
             display: flex;
             justify-content: space-between;
@@ -34,11 +49,24 @@
 }
 
 .navegacion-principal {
-    @include m.tablet {
-        display: flex;    
-        gap: 2rem;
-       
-    }   
+    display: flex;    
+    gap: 2rem;
+    justify-content: center;
+   
+    &.fijo{
+        transition: top, .3s linear;
+        position: fixed;
+        top: 0;
+        right: 0;
+        padding: 2rem 0;
+        width: 100%;
+        box-shadow: 0rem .2rem .6rem v.$negro;
+        background-color: v.$verde;
+        justify-content: center;
+        a{
+            margin: 0;
+        }
+    }
 
     a{
         display: block;

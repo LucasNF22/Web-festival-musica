@@ -368,10 +368,20 @@ img {
   background-color: #4cb8b3;
   padding: 2rem;
 }
+@media (min-width: 768px) {
+  .header.fijo {
+    transition: all 0.3s linear;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 2rem 0;
+    box-shadow: 0rem 0.2rem 0.6rem #000000;
+  }
+}
 .header h1 {
-  font-size: 3.8rem;
   font-family: "Monoton", cursive;
   font-weight: normal;
+  margin-bottom: 3rem;
   color: #fff;
   text-align: center;
 }
@@ -383,6 +393,7 @@ img {
 @media (min-width: 768px) {
   .header h1 {
     margin: 0;
+    font-size: 3.4rem;
   }
 }
 @media (min-width: 768px) {
@@ -393,11 +404,24 @@ img {
   }
 }
 
-@media (min-width: 768px) {
-  .navegacion-principal {
-    display: flex;
-    gap: 2rem;
-  }
+.navegacion-principal {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+}
+.navegacion-principal.fijo {
+  transition: top, 0.3s linear;
+  position: fixed;
+  top: 0;
+  right: 0;
+  padding: 2rem 0;
+  width: 100%;
+  box-shadow: 0rem 0.2rem 0.6rem #000000;
+  background-color: #4cb8b3;
+  justify-content: center;
+}
+.navegacion-principal.fijo a {
+  margin: 0;
 }
 .navegacion-principal a {
   display: block;
@@ -600,7 +624,7 @@ img {
 }
 
 .galeria {
-  margin-top: 5rem;
+  padding: 5rem 0;
 }
 .galeria h3 {
   text-align: center;
@@ -665,4 +689,73 @@ img {
   font-size: 2.5rem;
   line-height: 1;
   cursor: pointer;
+}
+
+.boletos {
+  padding: 5rem 0;
+}
+.boletos h3 {
+  text-align: center;
+  color: #fff;
+  margin-bottom: 2rem;
+}
+@media (min-width: 768px) {
+  .boletos .contenedor-boletos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5rem;
+  }
+}
+
+.pase .nombre-pase {
+  color: #fff;
+  text-align: center;
+  font-size: 2.4rem;
+}
+.pase-header, .pase-footer {
+  padding: 1rem;
+}
+.pase-header p, .pase-footer p {
+  text-align: center;
+  margin: 0;
+  color: #fff;
+  text-transform: uppercase;
+}
+.pase-header {
+  background-color: #f53756;
+}
+.pase-header p {
+  font-size: 1.6rem;
+}
+.pase-body {
+  background-color: #fff;
+}
+.pase-body ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.pase-body ul li,
+.pase-body ul :nth-child(odd) {
+  background-color: #fff;
+  padding: 1.5rem;
+  border-bottom: 1px solid #e1e1e1;
+}
+.pase-footer {
+  background-color: #752f97;
+}
+.pase-footer p {
+  font-weight: 700;
+  font-size: 2.4rem;
+}
+
+.site-footer {
+  background-color: #f53756;
+  padding: 2rem;
+}
+.site-footer p {
+  text-align: center;
+  color: #fff;
+  font-size: 1.8rem;
+  margin: 0;
 }

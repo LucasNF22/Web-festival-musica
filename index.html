@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rock & EDM Festival</title>
+    <title>Primavera Sound</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;900&display=swap" rel="stylesheet">
@@ -19,9 +19,9 @@
         <div class="contenedor contenido-header">
             <h1>Primavera Sound</h1>
             <nav class="navegacion-principal">
-                <a href="#">Line Up</a>
-                <a href="#">Galería</a>
-                <a href="#">Tickets</a>
+                <a href="#lineup">Line Up</a>
+                <a href="#galeria">Galería</a>
+                <a href="#tickets">Tickets</a>
             </nav>
         </div>
     </header>
@@ -57,7 +57,7 @@
         </div>
     </section>
 
-    <section class="line-up">
+    <section class="line-up" id="lineup">
         <h3>Line-Up</h3>
         <p class="dia">Viernes 21</p>
 
@@ -175,17 +175,55 @@
 
     </section>
 
-    <section class="galeria contenedor">
+    <section class="galeria contenedor" id="galeria">
         <h3>Galería</h3>
         <ul class="galeria-imagenes"></ul>
     </section>
 
-    <section>
+    <section class="boletos bg-verde" id="tickets">
+        <h3>Tickets</h3>
+        <div class="contenedor contenedor-boletos">
+            <div class="basico pase">
+                <p class="nombre-pase">Pase Básico</p>
+                <header class="pase-header">
+                    <p>Incluye</p>
+                </header>
+                <div class="pase-body">
+                    <ul>
+                        <li>Acceso a ambos escenarios</li>
+                        <li>Comida y Bebida</li>
+                    </ul>
+                </div>
+                <footer class="pase-footer">
+                    <p>$8400</p>
+
+                </footer>
+
+            </div>
+            <div class="premium pase">
+                <p class="nombre-pase">Pase Premium</p>
+                <header class="pase-header">
+                    <p>Incluye</p>
+
+                </header>
+                <div class="pase-body">
+                    <ul>
+                        <li>Acceso a ambos escenarios</li>
+                        <li>Comida y Bebida</li>
+                        <li>Merch del Evento</li>
+                        <li>Acceso VIP</li>
+                    </ul>
+                </div>
+                <footer class="pase-footer">
+                   <p>$8400</p> 
+                </footer>
+            </div>
+        </div>
 
     </section>
 
-    <footer>
-        
+    <footer class="site-footer">
+        <p>Primavera Sound - Todos los derechos reservados</p>
     </footer>
 
     <script src="build/js/app.js"></script>
