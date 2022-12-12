@@ -17,6 +17,7 @@ function navFija(){
     window.addEventListener('scroll', function(){
         if( sobreFestival.getBoundingClientRect().top < 0 && window.outerWidth < 768 ) {
             barraNav.classList.add('fijo');
+            body.classList.add('fijo');
 
         }else if(sobreFestival.getBoundingClientRect().top < 0 && window.outerWidth >= 768 ) {
             barra.classList.add('fijo');
